@@ -5,11 +5,11 @@ function RegisterCtrl($scope,$state,AuthService,$localStorage) {
   
    $localStorage.$default({
        user:{
-           id:1
+           
        }
    })
     
-    if($localStorage.user.id!=undefined){
+    if($localStorage.user!=undefined){
         $state.go('app.movies');
     }
     init();
